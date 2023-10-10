@@ -1,7 +1,7 @@
 import { request ,response} from 'express';
 
 const usersGet = ( req = request, res = response ) => {
-    const { nombre ,edad, apellido } = req.query; //argumentos en la url
+    const query = req.query; //argumentos en la url
     res.status(200).json(query);
 }
 
